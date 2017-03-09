@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+  </head>
+  <body>
+
+    <!--------------- Página uno ----------------->
+    <div data-role="page" id="uno">
+
+      <div data-role="header">
+        <h1>Página principal de JQuery 1</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>Contenido de la página</p>
+        <p><a href="#dos"> Ir a la página 2</a></p>
+        <p><a href="#tres" data-transition="fade"> Ir a la página 3</a></p>
+      </div>
+
+      <div data-role="footer">
+        <h1>Footer</h1>
+      </div>
+
+    </div>
+
+    <!--------------- Página dos----------------->
+    <div data-role="page" id="dos">
+
+      <div data-role="header">
+        <h1>Página principal de JQuery 2</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>Contenido de la página</p>
+        <p><a href="#uno"> Ir a la página 1</a></p>
+        <p><a href="#tres" data-transition="fade"> Ir a la página 3</a></p>
+      </div>
+
+      <div data-role="footer">
+        <h1>Footer</h1>
+      </div>
+    </div>
+
+    <!--------------- Página tres----------------->
+    <div data-role="page" data-dialog="true" id="tres">
+
+      <div data-role="header">
+        <h1>Página principal de JQuery 3</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>Contenido de la página</p>
+        <p><a href="#uno"> Ir a la página 1</a></p>
+        <p><a href="#dos"> Ir a la página 2</a></p>
+      </div>
+
+      <div data-role="footer">
+        <h1>Footer</h1>
+      </div>
+    </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </body>
+</html>
